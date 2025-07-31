@@ -45,10 +45,8 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
   - 
 --------
 ## <탐색적 데이터 분석>
-**1. 승률과 Features 간의 상관관계 히트맵** <br>
+**1. Features 간의 상관관계 히트맵** <br>
 <img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" /> <br>
-**2. 승률에 영향을 끼치는 Features 중요도 바 그래프** <br>
-<img width="581" height="397" alt="eda_2" src="https://github.com/user-attachments/assets/edee5ad9-4a4e-4b6b-bbd8-ec94bfe6df1b" /> <br>
 
 --------
 ## <모델 선정 과정>
