@@ -53,7 +53,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
 
 - **나이 변환** :
-   - 생년월일을 나이값으로 변환 -> 나이로 비교하려고 했으나 나이값이 존재하지 않아서 생년월일로 계산 <br>
+   - 생년월일을 나이값으로 변환 -> 생년월일로는 선수간의 차이를 계산하기 어려움 <br>
    
      <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
 
@@ -65,7 +65,10 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
   - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성 <br>
   
-    <img src="images/code2.png />
+    <img src="images/code2.png" />
+
+  - 특성 한글 명
+    <img src="images/korean.png" />
 
 --------
 
@@ -105,42 +108,48 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 </div> 
 <div> - 피드백 : 클래스 불균형을 고려한 하이퍼파라미터 튜닝과 결합해 예측 오차를 줄이는 데 효과적이었습니다. </div>
 
---------
-## <선정된 모델>
-- Stacking (RandomForest, xgboost, lightGBM)
-  <img src="images/model1.png">
-
-
 - 여기까지는 모든 특성을 이용하여 모델을 학습했습니다.
 - 하지만 저희 팀의 프로젝트 목표, 프로젝트의 필요성을 다시 생각하게 되어 선수간의 스탯차이로만 학습하고
 - 임의의 두 선수가 만났을 때 스탯차이로만 계산하여 승률을 계산하는 것이 더 승률을 예측하는데 도움이 될거라고 생각했습니다.
 - 경기 중에 일어난 이벤트 특성들이 많아 예측하는데 많은 도움이 되었지만 전부 드랍하고 다시 모델을 설계했습니다.
 
 --------
+## <선정된 모델> <br>
+- Stacking (RandomForest, xgboost, lightGBM)<br>
+  <img src="images/model1.png">
+
+--------
 ## <평가>
 ##### accuracy : 전체적인 성능, ROC-AUC : 이진 분류의 분리 성능, F1-score : 정밀도와 재현율의 균형 <br>
 
-- 전체 특성 학습 모델
+- 전체 특성 학습 모델 <br>
   <img width="549" height="298" alt="image" src="https://github.com/user-attachments/assets/86673645-8736-4025-b6bf-abe25b4ec6f2" /> <br>
 
-- 차이 특성 학습 모델
+- 차이 특성 학습 모델 <br>
   <img src="images/model2.png">
 
+- 데이터 편향으로 인한 0과 1 클래스의 F1 스코어 차이 <br>
+  <img src="images/datachart.png">
+
+이를 해결하기 위하여 아래의 차이 특성만으로 학습한 모델에서는 BorderlineSMOTE를 넣어 학습시킨 켜, 차이를 줄임. <br>
+  <img src="images/data11.png">
+
 ##### 혼동 행렬 시각화 <br>
-- 전체 특성 학습 모델
+- 전체 특성 학습 모델<br>
   <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" />
 
-- 차이 특성 학습 모델
+- 차이 특성 학습 모델 <br>
   <img src="images/model3.png">
 
 --------
 ## <평가 성능 향상을 위한 노력>
-- RandomizedSearchCV 사용
+- RandomizedSearchCV 사용<br>
   <img width="1414" height="237" alt="image" src="https://github.com/user-attachments/assets/05ddb3f5-cf01-43d5-a8d8-a04733d2be7c" />
 
-## <최종 예측>
-  <img src="images/model4.png">
-
+## <최종 예측> <br>
+  <img src="images/model4.png"> <br>
+  
+  - 임의의 두 선수를 널어 승률을 예측함. (승률 예측 함수는 ufc_stacking_prediction_final.ipynb에서 확인 가능)
 --------
 ## <한 줄 회고록>
 
