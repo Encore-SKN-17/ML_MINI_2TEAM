@@ -29,7 +29,7 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
    
 --------
 ## <기술 스택>
-<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white">
+<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white"> <img src="https://img.shields.io/badge/sklearn-green?style=plastic&logo=sklearn&logoColor=white"/>
 
 --------
 ## <사용한 데이터셋 및 데이터 전처리>
