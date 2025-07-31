@@ -152,7 +152,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 ## <최종 예측> <br>
   <img src="images/model4.png"> <br>
   
-  - 임의의 두 선수를 널어 승률을 예측함. (승률 예측 함수는 ufc_stacking_prediction_final.ipynb에서 확인 가능)
+  - 임의의 두 선수를 넣어 승률을 예측함. (승률 예측 함수는 ufc_stacking_prediction_final.ipynb에서 확인 가능)
 --------
 ## <한 줄 회고록>
 
