@@ -46,7 +46,7 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 --------
 ## <탐색적 데이터 분석>
 **1. Features 간의 상관관계 히트맵** <br>
-<img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" /> <br>
+<img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
 
 --------
 ## <모델 선정 과정>
