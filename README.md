@@ -54,6 +54,11 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 --------
 ## <모델 선정 과정>
 어떤 모델을 썼을 때 score (모델 평가)-> 점차 늘려가서 최종적으로 스태킹을 선택했다. 
+- 단일 RandomForest <br>
+<img width="292" height="229" alt="image" src="https://github.com/user-attachments/assets/280829f3-0d8c-473e-8e08-ed0517c59433" />
+
+  
+
 --------
 ## <선정된 모델>
 - Stacking (RandomForest, xgboost, lightGBM)
