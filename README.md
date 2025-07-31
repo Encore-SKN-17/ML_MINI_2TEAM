@@ -32,6 +32,12 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-green?style=plastic&logo=scikitlearn&logoColor=white"/>
 
 --------
+## <EDA(탐색적 데이터 분석)>
+**1. Features 간의 상관관계 히트맵** <br>
+<img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
+
+---------
+
 ## <사용한 데이터셋 및 데이터 전처리>
 ### 1. 사용한 데이터셋
 - **데이터명** : UFC DATASETS <br>
@@ -53,11 +59,6 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
  - **나이 변환** :
    - 생년월일을 나이값으로 변환
      <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
-
---------
-## <EDA(탐색적 데이터 분석)>
-**1. Features 간의 상관관계 히트맵** <br>
-<img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
 
 --------
 <h2> <모델 선정 과정> </h2>
