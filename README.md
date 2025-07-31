@@ -16,7 +16,9 @@
 ### 🌟프로젝트명
 UFC 선수의 승리 할 확률 예측
 ### 📌프로젝트 소개
-UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의 경기 정보를 바탕으로 승리할 확률을 예측하는 프로젝트입니다. 
+UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정확도, 타격 방어율등의 여러 스탯 차이를 계산한 특성들을 통한 
+정보를 바탕으로 승리할 확률을 예측하는 프로젝트입니다. 
+
 ### 🪟프로젝트 필요성
 **1. 베팅 시장 성장** <br>
    
@@ -28,13 +30,9 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
    '이변'의 발생은 리치 외에 간과되었던 다른 중요한 요인들(예: 경기 스타일 상성, 타격 정확도, 테이크다운 방어율 등)이 승률에 큰 영향을 미칠 수 있음을 시사합니다. 본 프로젝트는 이러한 숨겨진 승패 결정 요인들을 데이터 기반으로 발굴하고, 이를 예측 모델에 통합함으로써 기존의 직관적인 예측보다 훨씬 더 정확하고 신뢰할 수 있는 승률 예측을 가능하게 합니다.
    
 --------
+
 ## <기술 스택>
 <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-green?style=plastic&logo=scikitlearn&logoColor=white"/>
-
---------
-## <EDA(탐색적 데이터 분석)>
-**1. Features 간의 상관관계 히트맵** <br>
-<img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
 
 ---------
 
@@ -46,10 +44,19 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 
 ### 2. 데이터 전처리
 - **결측치 처리** :
-  - 무승부, 생년월일, 주요자세(stance), 키, 몸무게의 결측치 제거 -> 승부에 영향을 크게 끼치지 않는 컬럼 값이기 때문에
-  - reach 결측치 키 값으로 대체 -> reach 값은 승부에도 중요한 컬럼 값이라 결측치를 제거할 수 없는데 키와 상관관계가 매우 크기 때문에
-      
-    <img width="638" height="71" alt="image" src="https://github.com/user-attachments/assets/b260d8a9-d7eb-4b75-9adb-91f077acaef8" />
+  
+  - 무승부 결측치 제거: 경기 결과를 파악하는데 도움이 안됨
+  - 생년월일, 키, 몸무게의 결측치 제거 -> 선수간의 차이를 계산할수 없고, NULL값이 많지 않음
+  - reach 결측치 키 값으로 대체 -> reach 값은 승부에도 중요한 컬럼 값이고, NULL값이 많아 제거불가 또, 키와 상관관계가 매우 큼
+  
+    <img src="images/feature.png" />
+
+
+- **나이 변환** :
+   - 생년월일을 나이값으로 변환 -> 나이로 비교하려고 했으나 나이값이 존재하지 않아서 생년월일로 계산 <br>
+   
+     <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
+
 
 - **새로운 특성 생성** :
   - 선수 간의 특성 차이 생성 <br>
@@ -58,12 +65,24 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 
   - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성 <br>
   
-    <img width="653" height="457" alt="image" src="https://github.com/user-attachments/assets/93c7721b-95eb-45ea-8d2e-4c9e5a735db9" />
+    <img src="images/code2.png />
 
- - **나이 변환** :
-   - 생년월일을 나이값으로 변환 -> 나이로 비교하려고 했으나 나이값이 존재하지 않아서 생년월일로 계산 <br>
-   
-     <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
+--------
+
+## <EDA(탐색적 데이터 분석)>
+**1. Features 간의 상관관계 그래프** <br>
+<img src="images/bar.png">
+
+- 차이 특성을 계산할 때 레드팀 선수의 스탯 - 블루팀 선수의 스탯으로 계산을 했기 때문에 유리한 스탯일 수록 높은 상관관계를 보임
+- 레드팀 선수의 나이가 많을수록 패배에 뚜렷하게 관여하는 모습
+
+**2. 주요 스탯차이 특성 분포**<br>
+<img src="images/feature.png">
+
+- 주로 정규분포의 형태를 가지고 있음
+- 같은 체급의 선수들 끼리 싸우기 때문에 몸무게 차이 특성은 0값 분포가 큼
+
+**2. 주요 스탯차이 특성 분포**<br>
 
 --------
 <h2> <모델 선정 과정> </h2>
