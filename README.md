@@ -44,7 +44,7 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 - 새로운 특성 생성:
   - 
 --------
-## <탐색적 데이터 분석>
+## <EDA(탐색적 데이터 분석)>
 **1. Features 간의 상관관계 히트맵** <br>
 <img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
 
