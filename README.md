@@ -52,12 +52,25 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 <img width="1046" height="927" alt="eda_1" src="https://github.com/user-attachments/assets/dc03ac1c-d872-423f-b0a9-636ed7b23554" /> <br>
 
 --------
-## <모델 선정 과정>
-어떤 모델을 썼을 때 score (모델 평가)-> 점차 늘려가서 최종적으로 스태킹을 선택했다. 
-- 단일 RandomForest <br>
-<img width="292" height="229" alt="image" src="https://github.com/user-attachments/assets/280829f3-0d8c-473e-8e08-ed0517c59433" />
+<h2> <모델 선정 과정> </h2>
 
-  
+<h3>1. Logistic Regression</h3>
+<div align="left">
+  <img width="278" height="226" alt="image" src="https://github.com/user-attachments/assets/527d682b-9eef-412b-934d-d166ed047036" width="500">
+</div>
+<div> - 피드백 : 복잡한 비선형 관계를 반영하기에는 한계가 있어, 다른 트리 기반 모델에 비해 상대적으로 낮은 정확도를 보였습니다. </div>
+
+<h3>2. Random Forest Classifier</h3>
+<div align="left">
+  <img width="278" height="226" alt="image" src="https://github.com/user-attachments/assets/280829f3-0d8c-473e-8e08-ed0517c59433" width="500">
+</div>  
+<div> - 피드백 : Logistic보다는 나은 성능을 보였으며, 다양한 피처를 반영했을 때 비교적 안정적인 예측 성능을 보였습니다. 다만 피처 수가 많아 일부 정보가 희석될 가능성이 있습니다. </div>
+
+<h3>3. XGBoost</h3>
+<div align="left">
+  <img width="278" height="226" alt="image" src="https://github.com/user-attachments/assets/e6503bf7-2cce-4a05-aa85-6aabcc772103" width="500">
+</div> 
+<div> - 피드백 : 클래스 불균형을 고려한 하이퍼파라미터 튜닝과 결합해 예측 오차를 줄이는 데 효과적이었습니다. </div>
 
 --------
 ## <선정된 모델>
