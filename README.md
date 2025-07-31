@@ -32,7 +32,9 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 1. 결측치 제거 & 결측치 대체
 2. 새로운 특성 생성
 --------
+
 ## <EDA>
+
 <img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" />
 <img width="581" height="397" alt="eda_2" src="https://github.com/user-attachments/assets/edee5ad9-4a4e-4b6b-bbd8-ec94bfe6df1b" />
 
