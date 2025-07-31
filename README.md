@@ -83,18 +83,29 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 
 --------
 ## <선정된 모델>
-- Stacking (RandomForest, xgboost, lightGBM)
+- Stacking (LogisticRegression, RandomForest, xgboost, lightGBM)
+  <img width="1426" height="835" alt="image" src="https://github.com/user-attachments/assets/3066d51d-3635-4a62-a640-83b1701f0e56" />
+
 --------
 ## <평가>
-어떤 지표를 사용하여 평가했는지 
+- accuracy : 전체적인 성능
+- ROC-AUC : 이진 분류의 분리 성능
+- F1-score : 정밀도와 재현율의 균형
+  <img width="549" height="298" alt="image" src="https://github.com/user-attachments/assets/86673645-8736-4025-b6bf-abe25b4ec6f2" /> <br>
+  
+- 혼동 행렬 시각화
+  <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" />
+
 --------
 ## <평가 성능 향상을 위한 노력>
-gridsearch 사용 
+- RandomizedSearchCV 사용
+  <img width="1414" height="237" alt="image" src="https://github.com/user-attachments/assets/05ddb3f5-cf01-43d5-a8d8-a04733d2be7c" />
+
 --------
 ## <한 줄 회고록>
 
 🐷우진 : <br>
 🐷지수 : <br>
-🐷민정 : <br>
+🐷민정 : 프로젝트 기간 중에 주제 개요 및 선정 시간이 가장 오래 걸리고 그만큼 중요하다는 것을 다시 한 번 체감할 수 있었습니다. 주제에 대해 여러 방면으로 이 프로젝트에 이 주제가 적합한가, 왜 이 프로젝트가 필요한가 등과 관련하여 주제 적합성을 검토하는 과정이 특히 중요하다고 느꼈습니다. 또한, 컬럼이 워낙 많았어서 라벨 데이터와 관련이 높은 피처 값을 판단해 의미 없는 컬럼은 제거하고 중요한 컬럼은 결측치를 의미 있는 방식으로 대체하는 것이 모델 성능에 영향을 끼친다는 것을 배웠습니다. 성능이 좋은 모델을 선택하기 위해 어떤 지표로 성능을 평가할 것인지, 어떤 모델을 사용해볼 것인지 고민해볼 수 있는 시간이었습니다. <br>
 🐷세희 : <br>
 🐷의중 : <br>
