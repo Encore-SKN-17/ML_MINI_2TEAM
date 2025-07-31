@@ -50,14 +50,14 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
     <img width="638" height="71" alt="image" src="https://github.com/user-attachments/assets/b260d8a9-d7eb-4b75-9adb-91f077acaef8" />
 
 - **새로운 특성 생성** :
-  - 선수 간의 특성 차이 생성
+  - 선수 간의 특성 차이 생성 <br>
     <img width="655" height="213" alt="image" src="https://github.com/user-attachments/assets/f8d6bd3d-e788-4c18-b22c-6f850171d389" />
 
-  - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성
+  - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성 <br>
     <img width="653" height="457" alt="image" src="https://github.com/user-attachments/assets/93c7721b-95eb-45ea-8d2e-4c9e5a735db9" />
 
  - **나이 변환** :
-   - 생년월일을 나이값으로 변환
+   - 생년월일을 나이값으로 변환 <br>
      <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
 
 --------
@@ -90,10 +90,10 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 ## <평가>
 - accuracy : 전체적인 성능
 - ROC-AUC : 이진 분류의 분리 성능
-- F1-score : 정밀도와 재현율의 균형
+- F1-score : 정밀도와 재현율의 균형 <br>
   <img width="549" height="298" alt="image" src="https://github.com/user-attachments/assets/86673645-8736-4025-b6bf-abe25b4ec6f2" /> <br>
   
-- 혼동 행렬 시각화
+- 혼동 행렬 시각화 <br>
   <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" />
 
 --------
