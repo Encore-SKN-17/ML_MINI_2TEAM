@@ -46,18 +46,23 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 
 ### 2. 데이터 전처리
 - **결측치 처리** :
-  - 무승부, 생년월일, 주요자세(stance), 키, 몸무게의 결측치 제거 및 reach 결측치 키 값으로 대체
+  - 무승부, 생년월일, 주요자세(stance), 키, 몸무게의 결측치 제거 -> 승부에 영향을 크게 끼치지 않는 컬럼 값이기 때문에
+  - reach 결측치 키 값으로 대체 -> reach 값은 승부에도 중요한 컬럼 값이라 결측치를 제거할 수 없는데 키와 상관관계가 매우 크기 때문에
+      
     <img width="638" height="71" alt="image" src="https://github.com/user-attachments/assets/b260d8a9-d7eb-4b75-9adb-91f077acaef8" />
 
 - **새로운 특성 생성** :
   - 선수 간의 특성 차이 생성 <br>
+  
     <img width="655" height="213" alt="image" src="https://github.com/user-attachments/assets/f8d6bd3d-e788-4c18-b22c-6f850171d389" />
 
   - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성 <br>
+  
     <img width="653" height="457" alt="image" src="https://github.com/user-attachments/assets/93c7721b-95eb-45ea-8d2e-4c9e5a735db9" />
 
  - **나이 변환** :
-   - 생년월일을 나이값으로 변환 <br>
+   - 생년월일을 나이값으로 변환 -> 나이로 비교하려고 했으나 나이값이 존재하지 않아서 생년월일로 계산 <br>
+   
      <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
 
 --------
