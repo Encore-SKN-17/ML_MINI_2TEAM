@@ -39,13 +39,21 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 - **데이터 출처** : https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025/data
 
 ### 2. 데이터 전처리
-- 결측치 처리:
+- **결측치 처리** :
   - 무승부, 생년월일, 주요자세(stance), 키, 몸무게의 결측치 제거 및 reach 결측치 키 값으로 대체
-- 새로운 특성 생성:
+    <img width="638" height="71" alt="image" src="https://github.com/user-attachments/assets/b260d8a9-d7eb-4b75-9adb-91f077acaef8" />
+
+- **새로운 특성 생성** :
   - 선수 간의 특성 차이 생성
+    <img width="655" height="213" alt="image" src="https://github.com/user-attachments/assets/f8d6bd3d-e788-4c18-b22c-6f850171d389" />
+
   - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성
- - 나이 변환:
+    <img width="653" height="457" alt="image" src="https://github.com/user-attachments/assets/93c7721b-95eb-45ea-8d2e-4c9e5a735db9" />
+
+ - **나이 변환** :
    - 생년월일을 나이값으로 변환
+     <img width="650" height="114" alt="image" src="https://github.com/user-attachments/assets/71fbb1fa-a8da-4f68-912a-6ed1fb077152" />
+
 --------
 ## <EDA(탐색적 데이터 분석)>
 **1. Features 간의 상관관계 히트맵** <br>
