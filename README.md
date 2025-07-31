@@ -30,6 +30,7 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 --------
 ## <기술 스택>
 <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white">
+
 --------
 ## <데이터 전처리>
 1. 결측치 제거 & 결측치 대체
@@ -40,6 +41,7 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 <img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" /> <br>
 **2. 승률에 영향을 끼치는 Features 중요도 바 그래프** <br>
 <img width="581" height="397" alt="eda_2" src="https://github.com/user-attachments/assets/edee5ad9-4a4e-4b6b-bbd8-ec94bfe6df1b" /> <br>
+
 --------
 ## <모델 선정 과정>
 
