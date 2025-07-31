@@ -28,17 +28,18 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
    '이변'의 발생은 리치 외에 간과되었던 다른 중요한 요인들(예: 경기 스타일 상성, 타격 정확도, 테이크다운 방어율 등)이 승률에 큰 영향을 미칠 수 있음을 시사합니다. 본 프로젝트는 이러한 숨겨진 승패 결정 요인들을 데이터 기반으로 발굴하고, 이를 예측 모델에 통합함으로써 기존의 직관적인 예측보다 훨씬 더 정확하고 신뢰할 수 있는 승률 예측을 가능하게 합니다.
    
 --------
+## <기술 스택>
+
+--------
 ## <데이터 전처리>
 1. 결측치 제거 & 결측치 대체
 2. 새로운 특성 생성
 --------
-
-## <EDA>
-1. 히트맵
-<img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" />
-2. 중요도 바 그래프
-<img width="581" height="397" alt="eda_2" src="https://github.com/user-attachments/assets/edee5ad9-4a4e-4b6b-bbd8-ec94bfe6df1b" />
-
+## <탐색적 데이터 분석>
+**1. 승률과 Features 간의 상관관계 히트맵** <br>
+<img width="715" height="608" alt="eda_1" src="https://github.com/user-attachments/assets/8722c54a-2a71-4205-85dc-32c1851a8ec6" /> <br>
+**2. 승률에 영향을 끼치는 Features 중요도 바 그래프** <br>
+<img width="581" height="397" alt="eda_2" src="https://github.com/user-attachments/assets/edee5ad9-4a4e-4b6b-bbd8-ec94bfe6df1b" /> <br>
 --------
 ## <모델 선정 과정>
 
@@ -54,8 +55,8 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 --------
 ## <한 줄 회고록>
 
-🐷우진 : 
-🐷지수 :
-🐷민정 :
-🐷세희 :
-🐷의중 : 
+🐷우진 : <br>
+🐷지수 : <br>
+🐷민정 : <br>
+🐷세희 : <br>
+🐷의중 : <br>
