@@ -16,7 +16,7 @@
 ### 🌟프로젝트명
 UFC 선수의 승률 예측
 ### 📌프로젝트 소개
-UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의 경기 정보를 바탕으로 승률을 예측하는 프로그램
+UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의 경기 정보를 바탕으로 승률을 예측하는 프로젝트입니다. 
 ### 🪟프로젝트 필요성
 **1. 베팅 시장 성장** <br>
    
@@ -32,9 +32,17 @@ UFC 선수의 승, 패, 무승부, 키, 몸무게, 리치와 같은 선수들의
 <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white">
 
 --------
-## <데이터 전처리>
-1. 결측치 제거 & 결측치 대체
-2. 새로운 특성 생성
+## <사용한 데이터셋 및 데이터 전처리>
+### 1. 사용한 데이터셋
+- **데이터명** : UFC DATASETS <br>
+
+- **데이터 출처** : https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025/data
+
+### 2. 데이터 전처리
+- 결측치 처리:
+  - 결측치 제거 및 결측치 대체
+- 새로운 특성 생성:
+  - 
 --------
 ## <탐색적 데이터 분석>
 **1. 승률과 Features 간의 상관관계 히트맵** <br>
