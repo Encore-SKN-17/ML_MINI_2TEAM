@@ -141,7 +141,8 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
   <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" />
 
 - 차이 특성 학습 모델 <br>
-  <img src="images/model3.png">
+  <img src="images/model3.png"> <br>
+  소수 클래스인 0의 예측 확률이 상당히 증가
 
 --------
 ## <평가 성능 향상을 위한 노력>
