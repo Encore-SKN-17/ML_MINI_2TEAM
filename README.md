@@ -127,7 +127,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
 - 전체 특성 학습 모델 <br>
   <img width="549" height="298" alt="image" src="https://github.com/user-attachments/assets/86673645-8736-4025-b6bf-abe25b4ec6f2" /> <br>
-
+  
 - 차이 특성 학습 모델 <br>
   <img src="images/model2.png"> <br>
   선수간의 차이만으로 학습시킨 모델은 전체 특성을 통한 학습보다 성능은 떨어짐. 반면 이진 분리 성능인 F1-score은 유지함
@@ -145,11 +145,12 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
 ##### 혼동 행렬 시각화 <br>
 - 전체 특성 학습 모델<br>
-  <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" />
-
+  <img width="705" height="594" alt="image" src="https://github.com/user-attachments/assets/28254696-476e-415b-b08c-56002407c520" /> <br>
+  전체적인 모델 성능은 비슷하지만 0클래스의 예측확률이 떨어지는 모습 <br>
+  
 - 차이 특성 학습 모델 <br>
   <img src="images/model3.png"> <br>
-  소수 클래스인 0의 예측 확률이 상당히 증가
+  BorderlineSMOTE를 통하여 학습 후 차이 특성만 사용하였음에도 소수 클래스인 0의 예측 확률이 상당히 증가 <br>
 
 ## <최종 예측> <br>
   <img src="images/model4.png"> <br>
