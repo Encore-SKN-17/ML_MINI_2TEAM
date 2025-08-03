@@ -32,13 +32,20 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 --------
 
 ## <기술 스택>
-<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-green?style=plastic&logo=scikitlearn&logoColor=white"/>
 
+| 카테고리                | 기술 스택                                                                                     |
+|-----------------------|--------------------------------------------------------------------------------------------|
+| 언어                  |<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white">|
+| 라이브러리            |<img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=plastic&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/matplotlib-11557c?style=plastic&logo=matplotlib&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-0C5A5A?style=plastic&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-green?style=plastic&logo=scikitlearn&logoColor=white"/> |
+| 개발 환경 및 협업 도구 | <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"> |
+
+<br><br/>
+   
 ---------
 
 ## <사용한 데이터셋 및 데이터 전처리>
 ### 1. 사용한 데이터셋
-- **데이터명** : UFC DATASETS <br>
+- **데이터명** : UFC DATASETS 의 UFC.csv 파일 <br>
 
 - **데이터 출처** : https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025/data
 
@@ -63,7 +70,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
   
     <img width="655" height="213" alt="image" src="https://github.com/user-attachments/assets/f8d6bd3d-e788-4c18-b22c-6f850171d389" />
 
-  - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 파생 변수로 생성 <br>
+  - BMI, 총 경기 수, 공격 점수, 방어 점수, 순공격 이득, 공격/방어 스코어 비율, 타격 효율 차이를 주어진 변수를 사용해 파생 변수로 생성 <br>
   
     <img src="images/code2.png" />
 
@@ -156,6 +163,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
   <img src="images/model4.png"> <br>
   
   - 임의의 두 선수를 넣어 승률을 예측함. (승률 예측 함수는 ufc_stacking_prediction_final.ipynb에서 확인 가능)
+
 --------
 ## <한 줄 회고록>
 
