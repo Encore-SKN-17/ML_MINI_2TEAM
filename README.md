@@ -49,10 +49,12 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
 - **데이터 출처** : https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025/data
 
+- **원본 데이터 컬럼** : 
+
 ### 2. 데이터 전처리
 - **결측치 처리** :
   
-  - 무승부 결측치 제거: 경기 결과를 파악하는데 도움이 안됨
+  - 무승부 결측치 제거 -> 경기 결과를 파악하는데 도움이 안됨
   - 생년월일, 키, 몸무게의 결측치 제거 -> 선수간의 차이를 계산할수 없고, NULL값이 많지 않음
   - reach 결측치 키 값으로 대체 -> reach 값은 승부에도 중요한 컬럼 값이고, NULL값이 많아 제거불가 또, 키와 상관관계가 매우 큼
   
@@ -66,7 +68,7 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 
 
 - **새로운 특성 생성** :
-  - 선수 간의 특성 차이 생성 <br>
+  - 선수 간의 특성 차이 생성 -> 레드팀과 블루팀의 선수 특성 차이 분석 <br>
   
     <img width="655" height="213" alt="image" src="https://github.com/user-attachments/assets/f8d6bd3d-e788-4c18-b22c-6f850171d389" />
 
@@ -74,7 +76,8 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
   
     <img src="images/code2.png" />
 
-  - 특성 한글 명 <br>
+  - 특성 한글 명 -> 뜻을 알아보기 쉽게 컬럼명 한글로 변경 <br>
+  
     <img src="images/korean.png" />
 
 --------
@@ -125,12 +128,13 @@ UFC경기 두 선수의 승, 패, 무승부, 키, 몸무게, 리치, 타격 정�
 ## <선정된 모델> <br>
  ### Stacking (RandomForest, xgboost, lightGBM)<br>
   <img src="images/model1.png"><br>
-스태킹 모델 내에서 각 모델에 대한 파라미터를 랜덤서치를 사용하여 찾은 최적의 값 <br>
+  
+- 스태킹 모델 내에서 각 모델에 대한 파라미터를 랜덤서치를 사용하여 찾은 최적의 값 <br>
 (초기에 파라미터에 대한 기준을 못잡고 여러 배열값을 넣어 학습시간이 오래걸려 랜덤서치로 학습)
 
 --------
 ## <평가>
-##### accuracy : 전체적인 성능, ROC-AUC : 이진 분류의 분리 성능, F1-score : 정밀도와 재현율의 균형 <br>
+#### [accuracy : 전체적인 성능, ROC-AUC : 이진 분류의 분리 성능, F1-score : 정밀도와 재현율의 균형] <br>
 
 - 전체 특성 학습 모델 <br>
   <img width="549" height="298" alt="image" src="https://github.com/user-attachments/assets/86673645-8736-4025-b6bf-abe25b4ec6f2" /> <br>
